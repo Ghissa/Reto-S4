@@ -91,6 +91,10 @@ margin-top: -135px;
   will-change: transform;
 }
 
+.fijar{
+  margin-top: -135px;
+}
+
 .formulario__submit:disabled {
   pointer-events: none;
 }
@@ -106,3 +110,4 @@ margin-top: -135px;
   box-shadow: none;
   transform: translateY(0);
 }
+
