@@ -1,6 +1,6 @@
 var formulario = document.getElementsByClassName('formulario')[0],
 elementos = formulario.elements,
-boton= document.getElementsByName ('btn');
+boton= document.getElementsByName ('button');
 
 var validarNombre = function(e){
     if (formulario.Nombres.value == 0){
