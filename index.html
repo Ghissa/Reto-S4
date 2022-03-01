@@ -10,33 +10,39 @@
   </head>
 
   <body class="body">
-    <form action="" class="formulario">
+    <form action="" name="formulario" class="formulario" method="get">
       <h1 class="formulario__title">¿ Estas listo(a) para tener un Kumpas ?</h1>
 
-      <input type="text" class="formulario__input" />
-      <label for="" class="formulario__label">Nombres</label>
+      <input type="text" name="Nombres" class="formulario__input" maxlength="30" placeholder="Nombres" />
+      <label for="" class="formulario__label"></label>
 
-      <input type="text" class="formulario__input" />
-      <label for="" class="formulario__label">Apellidos</label>
+      <input type="text" name="Apellidos" class="formulario__input" placeholder="Apellidos" />
+      <label for="" class="formulario__label"></label>
 
-      <input type="text" class="formulario__input" />
-      <label for="" class="formulario__label">Correo</label>
+      <input type="text" name="Correo" class="formulario__input" placeholder="Correo"  />
+      <label for="" class="formulario__label"></label>
 
-      <input type="text" class="formulario__input" />
-      <label for="" class="formulario__label">Celular</label>
+      <input type="text" name="Celular" class="formulario__input" placeholder="Celular"  />
+      <label for="" class="formulario__label"></label>
 
-      <input type="text" class="formulario__input" />
-      <label for="" class="formulario__label">Mensaje</label>
+      <input type="text" name="Mensaje" class="formulario__input" placeholder="Mensaje" />
+      <label for="" class="formulario__label"></label>
 
-      <input type="submit" class="formulario__submit" />
+      <input type="checkbox" name="Terminos" class="terminos_checkbox" /> Terminos y Condiciones
 
-     
+      <input type="submit" name="btn" class="formulario__submit" value="Enviar"/>
+
+      <script src="index.js"></script>
     </form>
   </body>
 </html>
 
-<section>
-  <h1>Tiempo restante</h1>
+
+
+Imagenes\logo.png
+
+<section class="time-container">
+  <h1 class="time__title">Tiempo restante</h1>
   <div class="wrap">
     <div class="widget">
       <div class="fecha">
@@ -61,5 +67,5 @@
       </div>
     </div>
   </div>
-  <script src="index.js"></script>
+  
 </section>

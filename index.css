@@ -1,68 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
 
 .body {
-    margin: 0;
-    font-family: sans-serif;
-    background-color: #e2d7d1;
-    background-image: url("Imagenes/fondo.png");
-    font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #e2d7d1;
+  background-image: url("Imagenes/fondo.png");
+  font-family: 'Open Sans', sans-serif;
 }
 
 .formulario {
-    width: 800px;
-    max-width:100%;
-    margin: auto;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #e2d7d1;
-    box-shadow: 0 10px 20px 5px rgba(148, 152, 104, 0.8);
-    position: relative;
+  width: 800px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e2d7d1;
+  box-shadow: 0 10px 20px 5px rgba(148, 152, 104, 0.8);
+  position: relative;
 }
 
 .formulario__title {
-    text-align: center;
-    margin-top: 0;
-    color: rgb(217, 128, 50);
-    margin-bottom: 35px;
-
+  text-align: center;
+  margin-top: 0;
+  color: rgb(217, 128, 50);
+  margin-bottom: 35px;
 
 }
 
 .formulario__input,
 .formulario__label,
 .formulario__submit {
-    display: block;
-    width: 760px;
-    max-width:100%;
-    font-size: 1.3em;
-    
+  display: block;
+  width: 760px;
+  max-width: 100%;
+  font-size: 1.3em;
+
 
 }
-.formulario__input{
-    padding: 20px;
-    background: rgba(148, 152, 104, 0.2);
-    border: 1px solid rgba(217, 128, 50, 0.90);
-    margin-bottom: 40px;
-    border-radius: 15px;
+
+.formulario__input {
+  padding: 20px;
+  background: rgba(148, 152, 104, 0.2);
+  border: 1px solid rgba(217, 128, 50, 0.90);
+  margin-bottom: 40px;
+  border-radius: 15px;
 }
-.formulario__input:focus + .formulario__label{
-outline: 1px solid rgba(148, 152, 104,5);
-margin-top: -135px;
-   
+
+.formulario__input:focus + .formulario__label {
+  outline: 1px solid rgba(148, 152, 104, 5);
+  margin-top: -115px;
+
 }
+
 .formulario__label {
-    padding-left:15px;
-    position:absolute;
-    margin-top: -85px;
-    z-index: -20px;
-    color: rgb(118, 96, 78);
-    transition: all 0.2s;
-    border: none;
-    
+  padding-left: 15px;
+  position: absolute;
+  margin-top: -85px;
+  z-index: -20px;
+  color: rgb(118, 96, 78);
+  transition: all 0.2s;
+  border: none;
+
 
 }
 
-.formulario__submit{
+.formulario__submit {
 
   appearance: none;
   background-color: transparent;
@@ -72,7 +74,7 @@ margin-top: -135px;
   color: #949868;
   cursor: pointer;
   display: inline-block;
-  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 20px;
   font-weight: 600;
   line-height: normal;
@@ -91,7 +93,7 @@ margin-top: -135px;
   will-change: transform;
 }
 
-.fijar{
+.fijar {
   margin-top: -135px;
 }
 
@@ -102,7 +104,7 @@ margin-top: -135px;
 .formulario__submit:hover {
   color: #e2d7d1;
   background-color: #d98032;
-  box-shadow: rgba(118, 96, 78,0.90) 0 8px 15px;
+  box-shadow: rgba(118, 96, 78, 0.90) 0 8px 15px;
   transform: translateY(-2px);
 }
 
@@ -111,3 +113,36 @@ margin-top: -135px;
   transform: translateY(0);
 }
 
+.time-container {}
+
+.time__title {
+  font-size: 10px;
+}
+
+.wrap {}
+
+.widget {}
+
+.fecha {}
+
+.diaSemana {}
+
+.dia {}
+
+.mes {}
+
+.anio {}
+
+.reloj {}
+
+.horas {}
+
+.dia {}
+
+.minutos {}
+
+.caja-segundos {}
+
+.ampm {}
+
+.segundos {}
