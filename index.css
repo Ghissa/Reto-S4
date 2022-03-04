@@ -5,26 +5,29 @@
   font-family: 'Open Sans', sans-serif;
   background-color: #e2d7d1;
   background-image: url("Imagenes/fondo.png");
-
+  /*-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;*/
 }
 
 .formulario {
   display: block;
   width: 50%;
   max-width: 100%;
-  margin: auto;
+  margin: 0 auto;
   margin-top: 20px;
   padding: 20px;
-  background-color: #e2d7d1;
+  background-color: #e2d7d19f;
   box-shadow: 0 10px 20px 5px rgba(148, 152, 104, 0.8);
-  position: relative;
+  position:relative;
+  border-radius: 50px ;
 }
 
 .formulario__title {
   text-align: center;
   margin-top: 0;
   color: rgb(217, 128, 50);
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 
 }
 
@@ -33,67 +36,70 @@
 .formulario__submit {
   display: block;
   width: 100%;
-  font-size: 1.3em;
-
+  font-size: 1.3em
 
 }
 
 .formulario__input {
-  height: 50px;
+  padding: 5px;
+  height: 45px;
   background: rgba(148, 152, 104, 0.2);
   border: 1px solid rgba(217, 128, 50, 0.90);
   margin-bottom: 25px;
-  border-radius: 15px;
+  border-radius: 25px;
 }
 
 
 .formulario__label {
-  padding-left: 15px;
+  padding-left: 25px;
   position: absolute;
   color: rgb(118, 96, 78);
-  border: none;
-
-
+  cursor: pointer;
 }
 
-.lbl{
+.lbl {
   display: inline-block;
   width: 33px;
   height: 17px;
   background: #76604e;
-  border-radius: 100px ;
+  border-radius: 100px;
   cursor: pointer;
   position: relative;
   transition: 0.2s;
-
 }
 
-.lbl::after{
-  content:'' ;
-  display:block;
+.lbl::after {
+  content: '';
+  display: block;
   width: 13px;
   height: 13px;
   background: #d98032;
-  border-radius: 100px ;
-  position:absolute;
-  top: 2px ;
-  left: 2px ;
+  border-radius: 100px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
   transition: 0.2s;
-  
-}
-#switch:checked + .lbl::after{
-left: 18px;
+
 }
 
-#switch:checked + .lbl{
+.switch-container{
+margin: 0 auto;
+padding: 0px;
+}
+
+#switch:checked+.lbl::after {
+  left: 18px;
+}
+
+#switch:checked+.lbl {
   background: #949868;
-  }
+}
 
-#switch{
-    display: none;
-    }
+#switch {
+  display: none;
+}
 
-.switch_title{
+.switch_title {
   position: relative;
   color: #76604e;
   size: 15px;
@@ -107,7 +113,7 @@ left: 18px;
   appearance: none;
   background-color: transparent;
   border: 2px solid #76604e;
-  border-radius: 15px;
+  border-radius: 30px;
   box-sizing: border-box;
   color: #949868;
   cursor: pointer;
@@ -116,11 +122,9 @@ left: 18px;
   font-size: 20px;
   font-weight: 600;
   line-height: normal;
-  margin: 0;
   min-height: 60px;
   min-width: 0;
   outline: none;
-  padding: 16px 24px;
   text-align: center;
   text-decoration: none;
   transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
@@ -148,42 +152,92 @@ left: 18px;
   transform: translateY(0);
 }
 
-.timer {
-  margin-left: auto;
-  margin-right: auto;
-
+.time-container {
+  width: 100%;
+  height: 70px;
+  background-color: #d9803259;
+  border-color: #76604e;
+  border-radius: 50px;
+  position: relative;
+ 
+}
+.time-container:hover {
+ transform: scale(1.02);
+ cursor:pointer;
+ transition: 0.2s;
 }
 
-.time-container {}
 
-.time__title {
-  font-size: 10px;
+.time__title1 {
+  text-align: center;
+  font-size: 15px;
+  color: #76604e;
+  transform: rotate(-90deg);
+  position: relative;
+  bottom:-26px;
+  right: 350px;
+
+}
+.time__title2 {
+  text-align: center;
+  font-size: 15px;
+  color: #76604e;
+  transform: rotate(90deg);
+  position: relative;
+  bottom: 10px;
+  left: 350px;
+
+}
+.wrap {
+  display:inline;
+  text-align:center ;
+  max-width: 50px;
+}
+.widget {
+  width:40%;
+  margin:0;
+
+}
+.widget p {
+  display: inline-block;
+  line-height: 1em;
 }
 
-.wrap {}
+.fecha {
+  font-family:'Open Sans', sans-serif ;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+  padding: 1px;
+  width: 100%;
+  border-radius: 30px;
+  color: #949868;
+  position: absolute;
+  bottom: -8px;
+  right: 160px;
+  font-weight:600;
+}
 
-.widget {}
+.reloj{
+  position: absolute;
+  bottom: -15px;
+  right: -50px;
+  font-family:'Open Sans', sans-serif ;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1px;
+  width: 50%;
+  border-radius: 80px;
+  color: #949868;
+  font-weight:600;
+  
+}
+.reloj .caja-segundos{
+  display: inline-block;
 
-.fecha {}
-
-.diaSemana {}
-
-.dia {}
-
-.mes {}
-
-.anio {}
-
-.reloj {}
-
-.horas {}
-
-.dia {}
-
-.minutos {}
-
-.caja-segundos {}
-
-.ampm {}
-
-.segundos {}
+}
+.reloj .segundos,
+.reloj .ampm{
+  font-size: 0.8rem;
+  display: block;
+}

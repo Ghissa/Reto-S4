@@ -10,6 +10,8 @@
   </head>
 
   <body class="body">
+
+
     <form action="" name="formulario" class="formulario" method="get">
       <h1 class="formulario__title">¿ Estas listo(a) para tener un Kumpas ?</h1>
 
@@ -31,41 +33,38 @@
       <div class="switch-container">
       <input type="checkbox" id=switch name="Terminos" /> 
       <label for="switch" class="lbl"></label> 
-      <p class="switch_title">Terminos y Condiciones</p> 
+      <a href=""><p class="switch_title">Terminos y Condiciones</p> </a>
 
       <input type="submit" name="button" class="formulario__submit" value="Enviar"/>
-
+      <section class="time-container">
+        <h1 class="time__title1">Fecha</h1>
+        <h1 class="time__title2">Hora</h1>
+        <div class="wrap">
+          <div class="widget">
+            <div class="fecha">
+              <p id="diaSemana" class="diaSemana"></p>
+              <p id="dia" class="dia"></p>
+              <p>de</p>
+              <p id="mes" class="mes"></p>
+              <p>del</p>
+              <p id="year" class="year"></p>
+            </div> 
+      
+             <div class="reloj">
+            <p id="horas" class="horas"></p>
+              <p id="dia" class="dia"></p>
+              <p>:</p>
+              <p id="minutos" class="minutos"></p>
+              <p>:</p>
+              <div class="caja-segundos">
+              <p id="ampm" class="ampm"></p>
+              <p id="segundos" class="segundos"></p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <script src="index.js"></script>
     </form>
   </body>
 </html>
-
-<img class="timer" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUNJREFUSEvtle0xBEEQhp+LgBCIABEgAyJABjJABIiADBABIkAGQiAC6qnqqepaMzu76q780VX7425v+v3qnluw4lqsuD9/DvA1UDibUO/A0gHOgSvgY1nZZAU2PwNegUPgCNiLRzy/vweu5xDIAOvAE7DVYa+6kwDrCh1mcAzcxKmHsEtQSzWq3I3PqlSR1cxqqOAF2AiGtw16xUqVbIZdkwBOgUtA5gepeTmcyahKJRehqmlV7dB+ZFEO1QC06zGC3xkLIgMoeQ1+bHcNIPteelRtygBTG7WUdQGcc0d0aFHNATO6A96A7akWlelw9BzBsfpVyC7ae+QgmBNSq0LkM0ba7CaNqc3yosnSZs9p0bxKnCBr9qIVtoJ44TlRtZK5vylbPOpl67rWLhfPMMvdZKA2nXXb9v4POln3X/8DdD36Bu88RhnYFHw9AAAAAElFTkSuQmCC"/>
-<section class="time-container">
-  <h1 class="time__title">Tiempo restante</h1>
-  <div class="wrap">
-    <div class="widget">
-      <div class="fecha">
-        <p id="diaSemana" class="diaSemana"></p>
-        <p id="dia" class="dia">Día</p>
-        <p>de</p>
-        <p id="mes" class="mes">Mes</p>
-        <p></p>
-        <p id="anio" class="anio">Año</p>
-      </div>
-
-    <div class="reloj">
-      <p id="horas" class="horas"></p>
-        <p id="dia" class="dia"></p>
-        <p>:</p>
-        <p id="minutos" class="minutos"></p>
-        <p>:</p>
-        <div class="caja-segundos">
-        <p id="ampm" class="ampm"></p>
-        <p id="segundos" class="segundos"></p>
-      </div>
-      </div>
-    </div>
-  </div>
-  
-</section>
