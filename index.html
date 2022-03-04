@@ -10,8 +10,6 @@
   </head>
 
   <body class="body">
-
-
     <form action="" name="formulario" class="formulario" method="get">
       <h1 class="formulario__title">¿ Estas listo(a) para tener un Kumpas ?</h1>
 
@@ -31,9 +29,10 @@
       <label for="" class="formulario__label"></label>
 
       <div class="switch-container">
-      <input type="checkbox" id=switch name="Terminos" /> 
+      <input type="checkbox" id=switch name="Terminos"  onclick ="nuevapagina ('Terminos.html')"/> 
+    
       <label for="switch" class="lbl"></label> 
-      <a href=""><p class="switch_title">Terminos y Condiciones</p> </a>
+      <p class="switch_title">Terminos y Condiciones</p> 
 
       <input type="submit" name="button" class="formulario__submit" value="Enviar"/>
       <section class="time-container">
@@ -49,7 +48,6 @@
               <p>del</p>
               <p id="year" class="year"></p>
             </div> 
-      
              <div class="reloj">
             <p id="horas" class="horas"></p>
               <p id="dia" class="dia"></p>
@@ -59,12 +57,28 @@
               <div class="caja-segundos">
               <p id="ampm" class="ampm"></p>
               <p id="segundos" class="segundos"></p>
-            </div>
-            </div>
-          </div>
         </div>
       </section>
       <script src="index.js"></script>
+      
     </form>
   </body>
+
+  <footer class="section">
+    <section class="redes" id="redes">
+            
+    <h3 class="section-final__title"> Encuentranos en:  </h3>
+    <nav class="section-final">
+        <a href="https://www.instagram.com/kumpas_oficial/" class="section-final__container">
+                <img src="/Imagenes/instagram.png" class="section-final__icon-image"  alt="Instagram">
+        </a>
+    
+    
+          <a href="https://api.whatsapp.com/send?phone=51991537893&text=%C2%A1Hola%20Clarissa!%20Quisiera%20contactarme%20contigo" class="section-final__container">
+            <img src="/Imagenes/whatsapp.png" class="section-final__icon-image" alt="Whatsapp"> 
+        </a>
+    
+          <p >🌱 Derechos reservados &copy;  Kumpas 2022 🌱</p>
+        </section>
+        </footer>
 </html>

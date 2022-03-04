@@ -55,6 +55,9 @@ var validar = function (e) {
 
 formulario.addEventListener("submit", validar);
 
+
+
+
 (function () {
   var actualizarHora = function () {
     var fecha = new Date(),
@@ -111,3 +114,14 @@ actualizarHora();
 var intervalo = setInterval(actualizarHora,1000);
 
 })()
+
+var count = 0;
+function nuevapagina(page) {
+if (count == 0) {  //en linea
+count ++;
+OpenWin = this.open(page,"CtrlWindow","top=80,left=100,screenX=100,screenY=80,width=550,height=460,toolbar=no,menubar=no,location=no, scrollbars=no,resizable=yes");
+}
+
+function closepop() {if (OpenWin != null) OpenWin.close() }
+window.onunload = closepop;
+}
