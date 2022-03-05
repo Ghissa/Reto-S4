@@ -102,7 +102,6 @@ formulario.addEventListener("submit", validar);
 pHoras.textContent = horas;
 pAMPM.textContent = ampm;
 
-
 if (minutos < 10 ){ minutos = "0" + minutos };
 if (segundos < 10 ){ segundos = "0" + segundos };
 
