@@ -87,11 +87,6 @@
 
 }
 
-.switch-container {
-  margin: 0 auto;
-  padding: 0px;
-}
-
 #switch:checked+.lbl::after {
   left: 18px;
 }
