@@ -25,7 +25,7 @@
   backdrop-filter: blur(8.7px);
   -webkit-backdrop-filter: blur(6.7px);
   border: 1px solid rgba(148, 152, 104, 0.24);
-  ;
+  
 }
 
 .formulario__title {
@@ -41,7 +41,7 @@
 .formulario__submit {
   display:flexbox;
   width: 100%;
-  font-size: 1.3em
+  font-size: 1.3em;
 }
 
 .formulario__input {
@@ -260,7 +260,7 @@
 
 .terminos_title {
   text-align: center;
-  color: #d98032
+  color: #d98032;
 }
 
 .terminos_subtitle {
