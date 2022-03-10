@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
-    <link rel="icon" href="/Imagenes/logo.png" type="image/x-icon" />
+    <link rel="icon" href="./Imagenes/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
 
@@ -29,12 +29,13 @@
       <label for="" class="formulario__label"></label>
 
       <div >
-      <input type="checkbox" id=switch name="Terminos"  onclick ="nuevapagina ('Terminos.html')"/> 
+      <input type="checkbox" id="switch" name="Terminos"  onclick ="nuevapagina ('Terminos.html')"/> 
     
       <label for="switch" class="lbl"></label> 
       <p class="switch_title">Términos y Condiciones</p> 
 
-      <input type="submit" name="button" class="formulario__submit" value="Enviar"/>
+      <input type="submit" id="submit" name="button" class="formulario__submit" value="Enviar" action="guardar_formulario.php" onclick="confirmar_envio();"/>
+
       <section class="time-container">
         <h1 class="time__title1">Fecha</h1>
         <h1 class="time__title2">Hora</h1>
@@ -71,15 +72,17 @@
     <h3 class="section-final__title"> Encuéntranos en: </h3>
     <nav class="section-final">
         <a href="https://www.instagram.com/kumpas_oficial/" class="section-final__container">
-                <img src="/Imagenes/instagram.png" class="section-final__icon-image"  alt="Instagram">
+                <img src="./Imagenes/instagram.png" class="section-final__icon-image"  alt="Instagram">
         </a>
     
           <a href="https://api.whatsapp.com/send?phone=51991537893&text=%C2%A1Hola%20Clarissa!%20Quisiera%20contactarme%20contigo" class="section-final__container">
-            <img src="/Imagenes/whatsapp.png" class="section-final__icon-image" alt="Whatsapp"> 
+            <img src="./Imagenes/whatsapp.png" class="section-final__icon-image" alt="Whatsapp"> 
         </a>
     
           <p >🌱Derechos reservados &copy;Kumpas 2022🌱</p>
         </section>
         </footer>
         <script src="./js/index.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./js/sweetAlert.js"></script>
 </html>

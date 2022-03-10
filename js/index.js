@@ -114,6 +114,7 @@ var intervalo = setInterval(actualizarHora,1000);
 
 })()
 
+
 var count = 0;
 function nuevapagina(page) {
 if (count == 0) {  //en linea
@@ -123,4 +124,7 @@ OpenWin = this.open(page,"CtrlWindow","top=80,left=100,screenX=100,screenY=80,wi
 
 function closepop() {if (OpenWin != null) OpenWin.close() }
 window.onunload = closepop;
+
 }
+
+
